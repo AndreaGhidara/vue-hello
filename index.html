@@ -29,8 +29,11 @@
         </div>
 
         <img :src=linkCustom alt="">
-
-        <h2 V-bind:class="classProva">LoL</h2>
+        <div>
+            <h2 :style="{ backgroundColor: color }">LoL</h2>
+            <input v-model=color >
+            <button @click=changeBg()> ClickMe </button>
+        </div>
     </div>
 
     
