@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vue Js Lezione</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+</head>
+
+<body>
+    <div id="app">
+        <h1>{{message}}</h1>
+        <h1>Benvenuto: {{nome}} {{surname}} </h1>
+        <div>
+            <span>Name</span>
+            <input V-model=nome>
+        </div>
+        <br>
+        <div>
+            <span>Surname</span>
+            <input V-model=surname>
+        </div>
+        <div>
+            <h2>Inserisci Url: per visualizare l'imagine qua sotto</h2>
+            <input V-model=linkCustom>
+        </div>
+
+        <img :src=linkCustom alt="">
+
+        <h2 V-bind:class="classProva">LoL</h2>
+    </div>
+
+    
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>
